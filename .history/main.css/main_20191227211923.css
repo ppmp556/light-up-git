@@ -1,0 +1,696 @@
+/*CSS共通*/
+@charset "UTF-8";
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea {margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: "Noto Sans CJK JP";
+    width: 1280px;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active { /*テキストデフォルト下線外し*/
+    text-decoration: none;
+    color: black;
+}
+
+
+/*css共通ここまで*/
+
+/*オブジェクト*/
+
+.greenbox {
+    position: absolute;
+    top: -176px;
+    left: 150px;
+    opacity: 5;
+
+}
+.small-redbox {
+    position: absolute;
+    top: 255.2px;
+    left: 603.2px;
+}
+.redboxs {
+   position: absolute;
+   top: 222.31px;
+   left: 372.97px;
+
+}
+
+.small-yellowbox {
+    position: absolute;
+    top: 599.7px;
+    left: 832.48px;
+}
+.gray-boxs {
+    position: absolute;
+    top: 124.2px;
+    left: 881.85px;
+}
+.middle-redbox {
+    position: absolute;
+    top: 205.6px;
+    left: 452.24px;
+    
+}
+.big-redbox {
+    position: absolute;
+    top: 266.3px;
+    left: 532.3px;
+}
+.graybox {
+    top: 604.4px;
+    left: 77.1px;
+    position: absolute;
+}
+
+/*オブジェクトここまで*/
+
+/*header*/
+.header {
+    position: relative;
+    max-width: 1280px;
+    height: 793px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 150px;
+}
+
+    /*サイトタイトル*/
+    .site-title {
+        position: absolute;
+        top: 209.5px;
+        text-align: left;
+        font-size: 76px;
+        font-family: 'ITC Avant Garde Gothic';
+        line-height: 1.14;
+        letter-spacing: 0.075em;
+    }
+    .site-title a {
+        text-decoration: none;
+        color: #d4004e;
+    }
+    /*サイトタイトルここまで*/
+    /*サイトサブタイトル*/
+    .site-title-sub {
+        color: #d4004e;
+        position: absolute;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.4em;
+       
+        top: 507px;
+        left: 5px;
+    }
+
+    .small2 {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.4em;
+        line-height: 2.5px;
+    }
+    /*サイトサブタイトルここまで*/
+
+/*グローバルナビゲーション*/
+.global-nav { /*ナビ大枠*/
+    position: relative;
+    top: 59px;
+    width: 974.5px;
+    height: 77px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+}
+
+
+.nav-logo { /*ナビのロゴ*/
+    width: 168px;
+    height: 34px;
+    position: absolute;
+    margin: 0;
+    top: 80px;
+    left: 37px;
+    
+}
+
+.nav-itembox { /*ナビメニュー*/
+    position: absolute;
+    display: flex;
+    width: 607px;
+    height: 35px;
+    top: 21px;
+    left:  321px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-itembox li { /*ナビテキスト*/
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    flex-grow: 1; /*flexの余白分配比率指定*/
+}
+
+.nav-itembox  li + li:before { /*ナビの短い縦線,隣接セレクタ,疑似要素*/
+    
+    border-left: 1px solid #000000;
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%; /*縦方向に50%*/
+    height: 14px;
+    margin-top: -7px;
+
+}
+
+.small {
+    font-size: 10px;
+  
+
+}
+
+
+/*グローバルナビゲーションここまで*/
+
+/*アバウトここから*/
+.exclamation {
+    position: relative;
+    top: 119.6px;
+    width: 9px;
+    height: 60.41px;
+}
+
+.about {
+    width: 1280px;
+    height: 558px;
+    position: relative;
+    margin-bottom: 118.6px;
+  
+
+}
+
+.about-container {
+    top: 107.1px;
+    right: 151px;
+    width: 977.95px;
+    height: 332.28px;
+    position: absolute;
+}
+
+.about-box {
+    position: relative;
+    left: 24px;
+    width: 953.95px;
+    height: 282.5px;
+    padding: 66px 55px 62.5px 66px;
+    background-color: #f2f3f7;
+    z-index: -1;
+   
+}
+
+.about-title {
+    position: relative;
+    font-size: 43px;
+    line-height: 1.3;
+    width: 137px;
+    height: 57px;
+    top: 36px;
+    margin-left: 23.9px;
+}
+
+/*
+.about-title::before {
+    width: 9px;
+    height: 60.41px;
+    content: "! ";
+    color: #D4004E;
+    position: absolute;
+    left: -23.9px;
+
+}
+*/
+.about-text {
+    text-align: left;
+    background-color: #f2f3f7;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    line-height: 2.35;
+    width: 833px;
+    height: 154px;
+}
+
+button {
+    background-color: #D4004E;
+    color: #ffffff;
+    font-family: "Noto Sans CJK JP";
+}
+
+.redbutton { /*赤ボタン大枠*/
+    position: relative;
+    font-size: 13px bold;
+    
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.3;
+    left: 410.82px;
+    width: 157.12px;
+    height: 35.8px;
+    display: inline-block;
+
+    top: -17.9px;
+
+}
+.redbutton::before { /*疑似要素*/
+    content: '';
+    width: 5.31px;
+    height: 5.31px;
+    border-top: solid 1px #ffffff;
+    border-right: solid 1px #ffffff;
+    transform: rotate(45deg);/*rotateで要素回転指定,角度deg: 45°*/
+    position: absolute;
+    top: 50%;
+    left: 139.9px;
+}
+
+/*アバウトここまで*/
+
+/*プロダクトここから*/
+
+.exclamation-product {
+    position: relative;
+    top: 83.8px;
+    width: 9px;
+    height: 60.41px;
+    
+}
+
+.product { /*プロダクト大枠*/
+    position: relative;
+    width: 980px;
+    height: 1426.28px;
+    left: 150px;
+    bottom: 50px;
+
+}
+
+
+.product-title { /*プロダクトタイトル*/
+    position: relative;
+    font-size: 43px;
+    line-height: 1.3;
+    
+    left: 32.95px;
+   
+}
+
+/*
+.product-title::before { 
+    width: 9px;
+    height: 60.41px;
+    content: "! ";
+    color: #D4004E;
+    position: absolute;
+    left: -23.9px;
+
+}
+*/
+
+.product-wrapper {
+    list-style: none;
+    margin-top: 60px;
+
+}
+
+.product-box {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+li.product-box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+/*スイッチサイエンス*/
+.product-image-switch {
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    padding: 74px 106px 75.6px 117px;
+    margin-bottom: 74px;
+    z-index: 2;
+}
+
+
+/*スイッチエデュケーション*/
+.product-image-education {
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    margin-bottom: 83px;
+    padding: 72px 105px;
+    z-index: 2;
+}
+/*うんこボタン*/
+.product-image-fit {
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    margin-bottom: 83px;
+    padding: 74px 106px 75.6px 117px;
+}
+/*IoT受託開発*/
+.product-image-iot {
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    padding: 108.1px 188.4px 114.1px 187.3px;
+    
+}
+
+/*プロダクト会社名*/
+.product-red {
+    position: relative;
+    color: #D4004E;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    top: 23px;
+    
+    
+}
+.product-red2 {
+    position: relative;
+    color: #D4004E;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    top: 26px;
+
+    
+}
+
+
+.product-text {
+    color: #333333;
+    font-size: 13px;
+    letter-spacing: 0.055em;
+    line-height: 2.38;
+    margin-top: 41px;
+    text-align: left;
+}
+
+
+.redbutton2 { /*product用赤ボタン大枠*/
+    position: relative;
+    font-size: 13px bold;
+    display: inline-block;
+    align-items: center;
+
+    line-height: 1.3;
+    left: 125.3px;
+    width: 157.12px;
+    height: 35.8px;
+
+    top: 39.6px;
+    margin-top: auto;
+
+}
+
+.redbutton2::before { /*疑似要素*/
+    content: '';
+    width: 5.31px;
+    height: 5.31px;
+    border-top: solid 1px #ffffff;
+    border-right: solid 1px #ffffff;
+    transform: rotate(45deg);/*rotateで要素回転指定,角度deg: 45°*/
+    position: absolute;
+    top: 50%;
+    left: 139.9px;
+}
+
+
+/*プロダクトここまで*/
+/*newsここから*/
+.news { /*news大枠*/
+    position: relative;
+    width: 978px;
+    height: 499.28px;
+    left: 151px;
+    top: 73.6px;
+    margin-bottom: 181px;
+    
+}
+
+.news-title { /*newsタイトル*/
+    position: relative;
+    font-size: 43px;
+    line-height: 1.3;
+    top: 35px;
+    left: 32.95px;
+}
+
+/*
+.news-title::before { 
+    width: 9px;
+    height: 60.41px;
+    content: "! ";
+    color: #D4004E;
+    position: absolute;
+    left: -23.9px;
+
+}
+*/
+
+.list{ /*履歴大枠*/
+    border: #707070;
+    list-style: none;
+    position: relative;
+    left: 24px;
+    z-index: -1;
+
+}
+
+
+
+.list-item {
+    height: 86px;
+    width: 954px;
+    margin-bottom: 12px;
+    background: #f2f3f7;
+    display: flex;
+    
+}
+
+
+.list-wrap {
+    position: relative;
+    top: 33px;
+    left: 20px;
+    font-size: 13px;
+    letter-spacing: 0.015em;
+    line-height: 2.38;
+    flex-grow: 1;
+}
+
+
+.date {
+    padding-left: 23px;
+    padding-right: 22.9px;
+    border-right: 1px solid #000000;
+}
+
+.category-news {
+    padding-left: 30.1px;
+}
+
+
+span.category-education {
+    border: 1px solid #e5a31c;
+    padding: 5px 42px 5px 10px;
+    color: #e5a31c;
+    font-size: 12px;
+    font-family: "ITC Avant Garde Gothic";
+  
+}
+span.category-lab {
+    border: 1px solid #d4004e;
+    padding: 5px 80px 5px 80px;
+    color: #d4004e;
+    font-size: 12px;
+    font-family: "Noto Sans CJK JP";
+  
+}
+span.category-sience {
+    border: 1px solid #5fa153;
+    padding: 5px 65px 5px 27px;
+    color: #5fa153;
+    font-size: 12px;
+    font-family: "ITC Avant Garde Gothic";
+}
+span.category-fit {
+    border: 1px solid #50bbf4;
+    padding: 5px 75px 5px 54px;
+    color: #50bbf4;
+    font-size: 12px;
+    font-family: "ITC Avant Garde Gothic";
+}
+
+
+
+.redbutton3 { /*news用ボタン*/
+    position: relative;
+    font-size: 13px bold;
+    display: inline-block;
+    align-items: center;
+
+    line-height: 1.3;
+    width: 157.12px;
+    height: 35.8px;
+
+    margin-top: 48.6px;
+    left: 410.8px;
+    
+
+
+}
+
+.redbutton3::before { /*疑似要素*/
+    content: '';
+    width: 5.31px;
+    height: 5.31px;
+    border-top: solid 1px #ffffff;
+    border-right: solid 1px #ffffff;
+    transform: rotate(45deg);/*rotateで要素回転指定,角度deg: 45°*/
+    position: absolute;
+    top: 50%;
+    left: 139.9px;
+}
+
+
+/*newsここまで*/
+
+
+/*footerここから*/
+.footer {
+    position: relative;
+    width: 100%;
+    height: 261px;
+    background-color: #333333;
+    top: 96.6px;
+    bottom: 0;
+}
+
+
+
+.footer-itembox { /*フッターナビメニュー*/
+    position: relative;
+    display: flex;
+    left:0;
+    top: 32.9px;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 435px;
+    left: 417px;
+}
+
+.footer-itembox li { /*フッターナビテキスト*/
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    flex-grow: 1; /*flexの余白分配比率指定*/
+}
+
+.footer-itembox  li + li:before { /*フッターナビの短い縦線,隣接セレクタ,疑似要素*/
+    
+    border-left: 1px solid #ffffff;
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%; /*縦方向に50%*/
+    height: 14px;
+    margin-top: -7px;
+
+}
+
+.share-search {
+    position: relative;
+    
+}
+.share-logo {
+    position: relative;
+    top: 50.9px;
+    left: 592px;
+}
+
+.search-input {
+    position: relative;
+    width: 157.12px;
+    height: 35.8px;
+    top: 102.9px;
+    left: 360px;
+
+}
+
+
+
+
+.copyright { /*コピーライト*/
+    font-size: 9px bold;
+    color: #ffffff;
+    line-height: 3.1;
+    letter-spacing: 0.040em;
+    position: absolute;
+    top: 170.9px;
+    left: 450px;
+    margin-top: 32.2px;
+  
+
+}
+
+/*footerここまで*/
